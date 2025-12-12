@@ -169,6 +169,12 @@ vim.o.confirm = true
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Esc with jj
+vim.keymap.set('i', 'jj', '<Esc>')
+
+-- Esc and save with jk
+vim.keymap.set('i', 'jk', '<Esc>:w<CR>')
+
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
